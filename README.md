@@ -4,6 +4,7 @@
 
 Plataforma de priorização de roçada para o Rodoanel Oeste (SP-021), desenvolvida no **Challenge CCR Motiva** da FIAP (turma 2CCPW, Grupo 28). Em vez de seguir um calendário fixo, o sistema usa dado real de campo para mostrar onde cortar primeiro.
 
+<!-- GIF PRINCIPAL: salve o arquivo em docs/gifs/01-visao-geral.gif (ou troque o caminho abaixo). -->
 ![Visão geral do Roça](docs/gifs/01-visao-geral.gif)
 
 **Deploy:** https://crr-motiva.vercel.app
@@ -40,7 +41,8 @@ O Roça monitora **29,3 km a cada 500 m**, a partir de leituras reais de campo (
 
 No painel, com os dados reais: **248 trechos monitorados, 43 de prioridade alta, 26 média, 179 baixa e 13 críticos agora**.
 
-![Métricas do painel](docs/img/dashboard-metricas.jpg)
+<!-- Print do painel com as métricas: salve em docs/img/dashboard-metricas.png e descomente a linha abaixo. -->
+<!-- ![Métricas do painel](docs/img/dashboard-metricas.png) -->
 
 ## 3. Passo a passo do projeto
 
@@ -52,7 +54,7 @@ Cada trecho recebe leituras periódicas classificadas em três níveis de altura
 
 A rota usa os polígonos reais fornecidos pela Motiva (KML). Cada marco mostra o km e, ao ser tocado, os dados reais daquele trecho.
 
-![Relevo da rota](docs/img/relevo-da-rota.jpg)
+![Relevo da rota](docs/img/relevo-da-rota.png)
 
 ### 3.3 Mapa e API do Google Maps
 
@@ -70,17 +72,31 @@ O mapa (Leaflet) exibe os pontos de leitura. Ao clicar em um ponto, o **Street V
 
 ![Três níveis](docs/gifs/03-tres-niveis.gif)
 
+Referência real de cada nível, com fotos de campo:
+
+![Referência dos níveis](docs/img/niveis-referencia.png)
+
 ### 3.5 Classificação por foto (Gemini)
 
 Na página **Classificar por foto**, o usuário envia uma imagem e a API do Gemini estima a altura da vegetação, devolvendo nível, ação e grau de confiança.
 
 ![Classificação por foto](docs/gifs/04-foto-gemini.gif)
 
+Exemplo de resultado: altura estimada de ~8 cm, nível 1, confiança alta.
+
+![Resultado da classificação](docs/img/classificacao-foto.png)
+
 ### 3.6 Análise preditiva e simulação de sazonalidade
 
 Um modelo em scikit-learn aprende a taxa de crescimento de cada trecho e projeta **quando ele chega ao nível crítico**. O painel separa, em abas, a tendência baseada em dado de campo e a **simulação de cenários sazonais**, para nunca misturar o que foi medido com o que foi projetado.
 
-![Tendência](docs/img/tendencia.jpg)
+Tendência: leituras reais (linha cheia) e projeção até a zona crítica (tracejado).
+
+![Tendência](docs/img/tendencia.png)
+
+Simulação sazonal, com o clima histórico da região (Open-Meteo) e quantos trechos ficariam críticos em até 4 semanas em cada época.
+
+![Clima e sazonalidade](docs/img/clima-sazonalidade.png)
 
 ### 3.7 Alertas
 
@@ -126,7 +142,9 @@ Campos principais de cada trecho:
 | previsão | Projeção de quando atinge o nível crítico |
 | status | Prioridade e ação (ex.: cortar agora) |
 
-![Tabela de trechos priorizados](docs/img/relatorio-pdf.jpg)
+Prévia do relatório mensal, montada a partir dos mesmos dados, com o resumo do período e a tabela de trechos priorizados:
+
+![Relatório mensal e tabela de trechos priorizados](docs/img/relatorio-mensal.png)
 
 **Banco de dados:** [preencher: qual banco ou formato é usado (arquivos JSON/CSV, Postgres, Supabase...), onde fica o script ou o diagrama (`docs/`) e como consultar].
 
@@ -196,7 +214,7 @@ docs/         GIFs e imagens deste README
 
 | Integrante | Papel |
 |---|---|
-| [Gabriel Simioni](https://github.com/GabrielSimioni12) | Frontend e mapa |
+| [Gabriel Simioni](https://github.com/GabrielWodewotzky) | Frontend e mapa |
 | Davi Xavier | Hardware e sensores |
 | Guilherme Vega | Backend e modelo |
 | Gabriel Pereira | Pesquisa e dados |
