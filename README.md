@@ -2,7 +2,7 @@
 
 > Cortar onde a grama pede.
 
-![Visão geral do Roça](docs/gifs/01-visao-geral.gif)
+![Visão geral do Roça](docs/img/01-visao-geral.gif)
 
 Plataforma de priorização de roçada para o Rodoanel Oeste (SP-021), desenvolvida no **Challenge CCR Motiva** da FIAP (turma 2CCPW, Grupo 28). Em vez de seguir um calendário fixo, o sistema usa dado real de campo para mostrar onde cortar primeiro.
 
