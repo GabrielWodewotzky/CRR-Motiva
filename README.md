@@ -4,7 +4,6 @@
 
 Plataforma de priorização de roçada para o Rodoanel Oeste (SP-021), desenvolvida no **Challenge CCR Motiva** da FIAP (turma 2CCPW, Grupo 28). Em vez de seguir um calendário fixo, o sistema usa dado real de campo para mostrar onde cortar primeiro.
 
-<!-- GIF PRINCIPAL: salve o arquivo em docs/gifs/01-visao-geral.gif (ou troque o caminho abaixo). -->
 ![Visão geral do Roça](docs/gifs/01-visao-geral.gif)
 
 **Deploy:** https://crr-motiva.vercel.app
@@ -72,7 +71,7 @@ O mapa (Leaflet) exibe os pontos de leitura. Ao clicar em um ponto, o **Street V
 
 ![Três níveis](docs/gifs/03-tres-niveis.gif)
 
-Referência real de cada nível, com fotos de campo:
+Na tela de classificação, o usuário vê a referência de cada nível e as dicas de como tirar a foto:
 
 ![Referência dos níveis](docs/img/niveis-referencia.png)
 
@@ -155,8 +154,6 @@ Prévia do relatório mensal, montada a partir dos mesmos dados, com o resumo do
 
 O protótipo de sensoriamento está funcionando e leva a coleta para a borda: o ESP32-CAM lê os sensores e tira a foto no próprio ponto, e os dados seguem para o backend.
 
-![Esquema do ESP32-CAM](docs/img/esquema-esp32-cam.jpg)
-
 | Componente | Função |
 |---|---|
 | ESP32-CAM | Controle: Wi-Fi e câmera, lê os sensores e tira a foto |
@@ -222,6 +219,9 @@ docs/         GIFs e imagens deste README
 | Luiz Henrique | Integração e deploy |
 
 ## 10. Links
+
+- Deploy: https://crr-motiva.vercel.app
+- Trello: https://trello.com/b/DgbD79my/grupo-28-2ccpw
 
 - Deploy: https://crr-motiva.vercel.app
 - Trello: [preencher]
