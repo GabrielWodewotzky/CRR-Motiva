@@ -209,7 +209,7 @@ docs/         GIFs e imagens deste README
 ## 9. Links
 
 - Deploy: https://crr-motiva.vercel.app
-- Trello: [preencher]
-- Pitch em vídeo: [preencher]
+- Trello: https://trello.com/b/DgbD79my/grupo-28-2ccpw
+
 
 Projeto acadêmico da FIAP em parceria com o Challenge CCR Motiva. Os dados de campo e os polígonos da rodovia foram fornecidos pela Motiva.
