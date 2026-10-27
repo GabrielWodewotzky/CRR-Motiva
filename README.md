@@ -2,9 +2,9 @@
 
 > Cortar onde a grama pede.
 
-Plataforma de priorização de roçada para o Rodoanel Oeste (SP-021), desenvolvida no **Challenge CCR Motiva** da FIAP (turma 2CCPW, Grupo 28). Em vez de seguir um calendário fixo, o sistema usa dado real de campo para mostrar onde cortar primeiro.
-
 ![Visão geral do Roça](docs/gifs/01-visao-geral.gif)
+
+Plataforma de priorização de roçada para o Rodoanel Oeste (SP-021), desenvolvida no **Challenge CCR Motiva** da FIAP (turma 2CCPW, Grupo 28). Em vez de seguir um calendário fixo, o sistema usa dado real de campo para mostrar onde cortar primeiro.
 
 **Deploy:** https://crr-motiva.vercel.app
 
@@ -18,8 +18,7 @@ Plataforma de priorização de roçada para o Rodoanel Oeste (SP-021), desenvolv
 6. [Stack](#6-stack)
 7. [Como rodar localmente](#7-como-rodar-localmente)
 8. [Estrutura do repositório](#8-estrutura-do-repositório)
-9. [Equipe](#9-equipe)
-10. [Links](#10-links)
+9. [Links](#9-links)
 
 ## 1. O problema
 
@@ -207,21 +206,10 @@ public/       imagens, ícones e vídeos
 docs/         GIFs e imagens deste README
 ```
 
-## 9. Equipe
-
-| Integrante | Papel |
-|---|---|
-| [Gabriel Simioni](https://github.com/GabrielWodewotzky) | Frontend e mapa |
-| Davi Xavier | Hardware e sensores |
-| Guilherme Vega | Backend e modelo |
-| Gabriel Pereira | Pesquisa e dados |
-| Felipe Ramalho | Documentação |
-| Luiz Henrique | Integração e deploy |
-
-## 10. Links
+## 9. Links
 
 - Deploy: https://crr-motiva.vercel.app
-- Trello: https://trello.com/b/DgbD79my/grupo-28-2ccpw
-
+- Trello: [preencher]
+- Pitch em vídeo: [preencher]
 
 Projeto acadêmico da FIAP em parceria com o Challenge CCR Motiva. Os dados de campo e os polígonos da rodovia foram fornecidos pela Motiva.
